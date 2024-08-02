@@ -9,7 +9,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-#shortcuts
+#set -o vi
+
+# shortcuts
 alias rr='cd $HOME/.local/src/void-dwm && ls -a'
 alias h='cd $HOME/ && ls -a'
 alias cf='cd $HOME/.config && ls -a'
@@ -35,7 +37,7 @@ alias qt='xbps-query -x'
 alias un='sudo xbps-remove -ROfo'
 alias pc='sudo xbps-remove -Oo' # remove unused cache
 
-#youtube download
+# youtube download
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
 alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias yta-flac="yt-dlp --extract-audio --audio-format flac "
