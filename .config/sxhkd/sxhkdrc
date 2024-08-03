@@ -22,8 +22,8 @@ ctrl + alt + o
 shift + alt + l
     slock
 shift + alt + d
-    systemctl poweroff -i
+    st -e sudo poweroff -i
 shift + alt + r
-    systemctl reboot -i
+    st -e sudo reboot -i
 super + shift + f
     scrot 'archlinux-%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)'
