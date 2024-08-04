@@ -4,7 +4,7 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 ```
 # Dependencies
 ```
-sudo xbps-install brightnessctl xwallpaper htop xset slock lf alsa-utils font-awesome6 nerd-fonts-symbols-ttf picom pfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
+sudo xbps-install brightnessctl xwallpaper htop xset slock lf alsa-utils font-awesome6 nerd-fonts-symbols-ttf picom fastfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
 //font-hack-ttf
 
 ```
@@ -38,5 +38,5 @@ wpa_supplicant -B -i interface -c <(wpa_passphrase MYSSID passphrase)
 ```
 # ArchLinux
 ```
-sudo pacman -S brightnessctl xwallpaper htop lf xorg-xset alsa-utils ttf-font-awesome ttf-hack ttf-hack-nerd picom pfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
+sudo pacman -S brightnessctl xwallpaper htop lf xorg-xset alsa-utils ttf-font-awesome ttf-hack ttf-hack-nerd picom fastfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
 ```
