@@ -19,7 +19,7 @@ alias wal='cd $HOME/.local/share/wall && ls -a'
 alias mu='cd $HOME/.local/music && ls -a'
 alias dev='cd $HOME/.local/dev && ls -a'
 alias note='cd $HOME//.local/notes && ls -a'
-alias ff='fastfetch'
+alias ff='pfetch'
 alias ..='cd .. && ls -a'
 alias ...='cd ../../ && ls -a'
 
