@@ -21,7 +21,7 @@ ex	
 *.tif	󰈟
 *.tiff	󰈟
 *.xcf	🖌
-*.html	🌎
+*.html	
 *.xml	📰
 *.gpg	🔒
 *.css	
@@ -74,5 +74,5 @@ ex	
 *.ged   
 *.part  💔
 *.torrent 
-*.jar   ♨
-*.java	♨
+*.jar   
+*.java	
