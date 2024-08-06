@@ -27,8 +27,7 @@ sv up wpa_supplicant &&
 
 ctrl_interface=/run/wpa_supplicant
 update_config=1
-```
-```
+
 wpa_passphrase SSID passphrase >> /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 
 wpa_supplicant -B -i interface -c wpa_supplicant-wlp2s0.conf
@@ -36,7 +35,7 @@ wpa_supplicant -B -i interface -c wpa_supplicant-wlp2s0.conf
 
 # Change Network
 ```
-wpa_passphrase ......
+wpa_passphrase SSID passphrase >> /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 
 pkill wpa_supplicant
 
