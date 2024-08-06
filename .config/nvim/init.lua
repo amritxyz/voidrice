@@ -92,7 +92,7 @@ vim.opt.wildmode = 'longest,list,full'
 vim.cmd('autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o')
 vim.api.nvim_set_keymap('v', '.', ':normal .<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>f', ':Goyo | set bg=light | set linebreak<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>o', ':setlocal spell! spelllang=en_us<CR>', { noremap = true })
+--vim.api.nvim_set_keymap('n', '<leader>o', ':setlocal spell! spelllang=en_us<CR>', { noremap = true })
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
@@ -108,6 +108,7 @@ vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
 
 -- Other settings and mappings
 vim.api.nvim_set_keymap('n', 'Q', 'gq', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>o', 'ZQ', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>s', ':!clear && shellcheck -x %<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>b', ':vsp<space>$BIB<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>r', ':vsp<space>$REFER<CR>', { noremap = true })
