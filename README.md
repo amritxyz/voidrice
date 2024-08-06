@@ -6,7 +6,6 @@ sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel 
 ```
 sudo xbps-install brightnessctl xwallpaper htop xset slock lf alsa-utils font-awesome6 nerd-fonts-symbols-ttf xcompmgr fastfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
 //font-hack-ttf
-
 ```
 # Window Manager
 ```
@@ -28,15 +27,9 @@ sv up wpa_supplicant &&
 
 ctrl_interface=/run/wpa_supplicant
 update_config=1
-
 ```
 ```
 wpa_passphrase SSID passphrase >> /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 
 wpa_supplicant -B -i interface -c <(wpa_passphrase MYSSID passphrase)
-
-```
-# ArchLinux
-```
-sudo pacman -S brightnessctl xwallpaper htop lf xorg-xset alsa-utils ttf-font-awesome ttf-hack ttf-hack-nerd picom fastfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
 ```
