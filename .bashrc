@@ -45,8 +45,6 @@ alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
 # NeoVim
-alias lab='cat $HOME/.local/share/lab'
-alias hub='cat $HOME/.local/share/hub'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
