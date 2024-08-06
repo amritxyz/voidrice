@@ -108,7 +108,7 @@ vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
 
 -- Other settings and mappings
 vim.api.nvim_set_keymap('n', 'Q', 'gq', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>o', 'ZQ', { noremap = true })
+vim.api.nvim_set_keymap('n', '<space>o', 'ZQ', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>s', ':!clear && shellcheck -x %<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>b', ':vsp<space>$BIB<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>r', ':vsp<space>$REFER<CR>', { noremap = true })
