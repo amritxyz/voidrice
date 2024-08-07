@@ -10,8 +10,10 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # set -o vi
+
 # NetworkManager Toggle
 alias netsh='$HOME/.config/scripts/net.sh'
+
 # shortcuts
 alias rr='cd $HOME/.local/src/void-dwm && ls -a'
 alias h='cd $HOME/ && ls -a'
