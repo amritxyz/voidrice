@@ -6,15 +6,13 @@ case "$(readlink -f /sbin/init)" in
 	*) ctl='loginctl' ;;
 esac
 
-wmpid(){
-	tree="$(pstree -ps $$)"
-	tree="${tree#*$WM(}"
-	echo "${tree%%)*}"
+wmpid() {
+  pgrep $WM
 }
 
 case "$(printf "🔒 lock\n🚪 leave $WM\n♻ renew $WM\n🐻 hibernate\n🔃 reboot\n💻 shutdown\n💤 sleep\n📺 display off" | dmenu -i -p 'Action: ')" in
 	'🔒 lock') slock ;;
-	"🚪 leave $WM") kill -TERM "$(wmpid)" ;;
+	"🚪 leave $WM") kill -TERM "$(wmpid)";;
 	"♻️ renew $WM") kill -HUP "$(wmpid)" ;;
 	'🐻 hibernate') slock $ctl hibernate -i ;;
 	'💤 sleep') slock $ctl suspend -i ;;
