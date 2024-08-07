@@ -10,7 +10,8 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # set -o vi
-
+# NetworkManager Toggle
+alias netsh='$HOME/.config/scripts/net.sh'
 # shortcuts
 alias rr='cd $HOME/.local/src/void-dwm && ls -a'
 alias h='cd $HOME/ && ls -a'
@@ -34,7 +35,7 @@ alias ld='tree'
 alias lt='tree'
 alias ins='sudo xbps-install'
 alias qt='xbps-query -x'
-alias un='sudo xbps-remove -ROfo'
+alias un='sudo xbps-remove -R'
 alias pc='sudo xbps-remove -Oo' # remove unused cache
 
 # youtube download
