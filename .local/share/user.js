@@ -1,69 +1,3 @@
-// Arken****
-user_pref("security.cert_pinning.enforcement_level", 2);
-user_pref("_user.js.parrot", "2700 syntax error: the parrot's joined the bleedin' choir invisible!");
-user_pref("browser.contentblocking.category", "strict");
-user_pref("_user.js.parrot", "2800 syntax error: the parrot's bleedin' demised!");
-user_pref("privacy.sanitize.sanitizeOnShutdown", true);
-user_pref("privacy.clearOnShutdown.cache", true);     // [DEFAULT: true]
-user_pref("privacy.clearOnShutdown_v2.cache", true);  // [FF128+] [DEFAULT: true]
-user_pref("privacy.clearOnShutdown.downloads", true); // [DEFAULT: true]
-user_pref("privacy.clearOnShutdown.formdata", true);  // [DEFAULT: true]
-user_pref("privacy.clearOnShutdown.history", true);   // [DEFAULT: true]
-user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true); // [FF128+] [DEFAULT: true]
-user_pref("privacy.clearOnShutdown.cookies", true); // Cookies
-user_pref("privacy.clearOnShutdown.offlineApps", true); // Site Data
-user_pref("privacy.clearOnShutdown.sessions", true);  // Active Logins [DEFAULT: true]
-user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true); // Cookies, Site Data, Active Logins
-user_pref("privacy.clearSiteData.cache", true);
-user_pref("privacy.clearSiteData.cookiesAndStorage", false); // keep false until it respects "allow" site exceptions
-user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
-   // user_pref("privacy.clearSiteData.siteSettings", false);
-user_pref("privacy.cpd.cache", true);    // [DEFAULT: true]
-user_pref("privacy.clearHistory.cache", true);
-user_pref("privacy.cpd.formdata", true); // [DEFAULT: true]
-user_pref("privacy.cpd.history", true);  // [DEFAULT: true]
-   // user_pref("privacy.cpd.downloads", true); // not used, see note above
-user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
-user_pref("privacy.cpd.cookies", false);
-user_pref("privacy.cpd.sessions", true); // [DEFAULT: true]
-user_pref("privacy.cpd.offlineApps", false); // [DEFAULT: false]
-user_pref("privacy.clearHistory.cookiesAndStorage", false);
-user_pref("network.connectivity-service.enabled", false);
-user_pref("captivedetect.canonicalURL", "");
-user_pref("network.captive-portal-service.enabled", false); // [FF52+]
-user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
-user_pref("breakpad.reportURL", "");
-user_pref("browser.tabs.crashReporting.sendReport", false); // [FF44+]user_pref("app.normandy.enabled", false);
-user_pref("app.normandy.api_url", "");
-user_pref("toolkit.telemetry.unified", false);
-user_pref("toolkit.telemetry.enabled", false); // see [NOTE]
-user_pref("toolkit.telemetry.server", "data:,");
-user_pref("toolkit.telemetry.archive.enabled", false);
-user_pref("toolkit.telemetry.newProfilePing.enabled", false); // [FF55+]
-user_pref("toolkit.telemetry.shutdownPingSender.enabled", false); // [FF55+]
-user_pref("toolkit.telemetry.updatePing.enabled", false); // [FF56+]
-user_pref("toolkit.telemetry.bhrPing.enabled", false); // [FF57+] Background Hang Reporter
-user_pref("toolkit.telemetry.firstShutdownPing.enabled", false); // [FF57+]
-user_pref("toolkit.telemetry.coverage.opt-out", true); // [HIDDEN PREF]
-user_pref("toolkit.coverage.opt-out", true); // [FF64+] [HIDDEN PREF]
-user_pref("toolkit.coverage.endpoint.base", "");
-/* 0335: disable Firefox Home (Activity Stream) telemetry ***/
-user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.showSponsored", false); // [FF58+]
-user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
-user_pref("browser.newtabpage.enabled", false);
-user_pref("browser.startup.page", 0);
-user_pref("browser.startup.homepage", "about:blank");
-user_pref("_user.js.parrot", "9000 syntax error: the parrot's cashed in 'is chips!");
-user_pref("browser.startup.homepage_override.mstone", "ignore");
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
-user_pref("browser.urlbar.showSearchTerms.enabled", false);
-user_pref("_user.js.parrot", "9999 syntax error: the parrot's shuffled off 'is mortal coil!");
-user_pref("_user.js.parrot", "8000 syntax error: the parrot's crossed the Jordan");
-
-
 /** GENERAL ***/
 user_pref("content.notify.interval", 100000);
 
@@ -104,9 +38,6 @@ user_pref("dom.enable_web_task_scheduling", true);
 user_pref("dom.security.sanitizer.enabled", true);
 user_pref("browser.privatebrowsing.autostart", true);
 
-/****************************************************************************
- * SECTION: SECUREFOX                                                       *
-****************************************************************************/
 /** TRACKING PROTECTION ***/
 user_pref("browser.contentblocking.category", "strict");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
@@ -215,9 +146,6 @@ user_pref("captivedetect.canonicalURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
 
-/****************************************************************************
- * SECTION: PESKYFOX                                                        *
-****************************************************************************/
 /** MOZILLA UI ***/
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
