@@ -11,8 +11,9 @@ export PATH=$PATH:$HOME/.local/bin
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
-
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+shopt -s autocd
+stty -ixon
 # set -o vi
 
 # shortcuts
@@ -32,17 +33,16 @@ alias ..='cd .. && ls -a'
 alias ...='cd ../../ && ls -a'
 
 # Helpful aliases
-alias imv='nsxiv'
 alias  c='clear'
 alias  l='ls -l'
 alias ls='ls'
 alias la='ls -a'
 alias ll='ls -la'
 alias ld='tree'
-alias ins='sudo xbps-install'
-alias qt='xbps-query -x'
-alias un='sudo xbps-remove -R'
-alias pc='sudo xbps-remove -Oo' # remove unused cache
+alias xi='sudo xbps-install'
+alias xq='xbps-query'
+alias xr='sudo xbps-remove -R'
+alias pc='sudo rm -rf /var/cache/xbps/*' # remove unused cache
 
 # youtube download
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -55,14 +55,6 @@ alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
-
-# change dir shortcuts
-alias ..='cd ..'
-alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
-
 alias mkdir='mkdir -p'
 
 # git aliases
