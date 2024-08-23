@@ -1,4 +1,7 @@
 #!/bin/sh
+xset s off &
+xset -dpms &
+xset s noblank &
 xset r rate 300 50 &
 slstatus &
 xcompmgr &
