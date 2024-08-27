@@ -19,7 +19,12 @@ eval "$(dircolors -b)"
 shopt -s autocd
 stty -ixon
 HISTSIZE= HISTFILESIZE= # Infinite history.
-#set -o vi
+set -o vi
+
+clear_insert() {
+  clear
+  READLINE_LINE=$(echo -n "\e[H\e[J")
+}
 
 # Aliases
 alias grep='grep --color=auto'

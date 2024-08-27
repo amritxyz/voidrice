@@ -26,3 +26,4 @@ set echo-control-characters off
 "\C-b":"cd ..\n"
 #"\C-h":"cd ~\n"
 "\C-s": "\C-asudo \C-e"
+"\C-l": "clear_insert\n"
