@@ -2,6 +2,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+[[ "$(fgconsole 2>/dev/null)" -eq 1 ]] && exec startx > /dev/null 2>&1
 
 # Environment variables
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -20,11 +21,6 @@ shopt -s autocd
 stty -ixon
 HISTSIZE= HISTFILESIZE= # Infinite history.
 set -o vi
-
-clear_insert() {
-  clear
-  READLINE_LINE=$(echo -n "\e[H\e[J")
-}
 
 # Aliases
 alias grep='grep --color=auto'
