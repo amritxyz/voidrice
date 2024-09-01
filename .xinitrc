@@ -1,5 +1,5 @@
 #!/bin/sh
-xmodmap ~/.Xmodmap &
+setxkbmap -option caps:swapescape &
 xset s off &
 xset -dpms &
 xset s noblank &
