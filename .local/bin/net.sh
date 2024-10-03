@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 # Start Network Manager Service and Removing unnecessary stuffs
 sudo rm -rf /var/service/NetworkManager
@@ -18,7 +18,7 @@ sudo mkdir -p /etc/NetworkManager/conf.d
 sudo touch /etc/NetworkManager/conf.d/wifi-powersave.conf
 LOC="/etc/NetworkManager/conf.d/wifi-powersave.conf"
 	echo -e "The following has been added to $LOC.\n"
-	echo -e "[connection]\nwifi.powersave = 2" | sudo tee $LOC > /dev/null
+	echo "[connection]\nwifi.powersave = 2" | sudo tee $LOC > /dev/null
 	echo "The following has been added to $LOC."
 	cat $LOC
 	echo

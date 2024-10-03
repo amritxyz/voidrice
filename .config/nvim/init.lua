@@ -83,8 +83,6 @@ vim.opt.showcmd = false
 vim.cmd('colorscheme vim')
 
 -- Key mappings
-vim.api.nvim_set_keymap('n', ',,', ':keepp /<++><CR>ca<', { noremap = true })
-vim.api.nvim_set_keymap('i', ',,', '<esc>:keepp /<++><CR>ca<', { noremap = true })
 vim.opt.encoding = 'utf-8'
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -115,6 +113,13 @@ vim.api.nvim_set_keymap('n', '<leader>r', ':vsp<space>$REFER<CR>', { noremap = t
 vim.api.nvim_set_keymap('n', 'S', ':%s//g<Left><Left>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>c', ':w! | !compiler "%:p"<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>p', ':!opout "%:p"<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-n>', ':vsplit <C-r>=expand("%:p:h").."/"<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<S-n>', ':split <C-r>=expand("%:p:h").."/"<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<S-h>', ':vertical resize +5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-l>', ':vertical resize -5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-k>', ':resize +2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-j>', ':resize -2<CR>', { noremap = true, silent = true })
+
 vim.cmd('cabbrev w!! execute "silent! write !sudo tee % >/dev/null" <bar> edit!')
 
 -- Toggle hidden statusbar
