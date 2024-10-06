@@ -119,6 +119,7 @@ vim.api.nvim_set_keymap('n', '<S-h>', ':vertical resize +5<CR>', { noremap = tru
 vim.api.nvim_set_keymap('n', '<S-l>', ':vertical resize -5<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-k>', ':resize +2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-j>', ':resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-s>', ':r ~/.config/nvim/snippets/<C-d>', { noremap = true, silent = true })
 
 vim.cmd('cabbrev w!! execute "silent! write !sudo tee % >/dev/null" <bar> edit!')
 
