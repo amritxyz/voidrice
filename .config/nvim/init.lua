@@ -99,10 +99,10 @@ vim.api.nvim_set_keymap('n', '<leader>n', ':NERDTreeToggle<CR>', { noremap = tru
 vim.cmd('autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif')
 
 -- Split navigation
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>j', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>h', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>l', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>k', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
 
 -- Other settings and mappings
 vim.api.nvim_set_keymap('n', 'Q', 'gq', { noremap = true })
