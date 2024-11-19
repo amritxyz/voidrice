@@ -1,13 +1,10 @@
 #!/bin/sh
 
-if [ "$#" -ne 1 ]; then
-	echo "Usage: rc <RustSourceFile.rs>"
-	return 1
-fi
+[ "$#" -ne 1 ] && echo "Usage: rc <RustSourceFile.rs>" && exit 1
+
 input_file="$1"
 output_file="${input_file%.rs}.out"
-if [ ! -f "$input_file" ]; then
-	echo "Error: '$input_file' not found!"
-	return 1
-fi
+
+[ ! -f "$input_file" ] && echo "Error: '$input_file' not found!" && exit 1
+
 rustc "$input_file" -o "$output_file"
