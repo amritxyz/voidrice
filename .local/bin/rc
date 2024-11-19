@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: rc <RustSourceFile.rs>"
+	return 1
+fi
+input_file="$1"
+output_file="${input_file%.rs}.out"
+if [ ! -f "$input_file" ]; then
+	echo "Error: '$input_file' not found!"
+	return 1
+fi
+rustc "$input_file" -o "$output_file"
