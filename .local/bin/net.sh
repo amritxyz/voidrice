@@ -22,7 +22,7 @@ LOC="/etc/NetworkManager/conf.d/wifi-powersave.conf"
 	echo "The following has been added to $LOC."
 	cat $LOC
 	echo
-	sleep 3
 	echo "Restarting NetworkManager service..."
 	# For Runit Systems
+	sleep 5
 	sudo sv restart NetworkManager
