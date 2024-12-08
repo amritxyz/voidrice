@@ -1,11 +1,5 @@
 #!/bin/sh
 
-## Scan for devices
-#echo "Scanning for Bluetooth devices..."
-#bluetoothctl scan on
-#sleep 5 # Wait for 10 seconds to complete the scan
-#bluetoothctl scan off
-
 get_device_list() {
     bluetoothctl devices | awk -F ' ' '{print $3 " " $2}'
 }
