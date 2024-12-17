@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Define the target directory
+# Target directory
 TARGET_DIR="$HOME/.local/vids"
 
 # Check if the directory exists
@@ -20,17 +20,14 @@ if [ -z "$MAX_NUMBER" ]; then
 	MAX_NUMBER=0
 fi
 
-# Determine the next number
+# Next number
 NEXT_NUMBER=$((MAX_NUMBER + 1))
 
-# Define the filename format
+# Filename format
 FILENAME="$TARGET_DIR/${NEXT_NUMBER}_vid.mkv"
 
-# Sleep for 2 seconds
-sleep 2
-
-# Run ffmpeg command to capture screen and audio
-ffmpeg -y \
+sleep 2 &&
+	ffmpeg -y \
 	-f x11grab \
 	-draw_mouse 0 \
 	-s 1366x768 \

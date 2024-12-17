@@ -1,13 +1,13 @@
 #!/bin/sh
 
-# Define the target directory
+# Target directory
 TARGET_DIR="$HOME/.local/vids"
 
-# Prompt for YouTube stream key
+# YouTube stream key
 echo "Stream Key: "
 read stream_key
 
-# Prompt to enable microphone
+# Enable microphone
 echo "Enable microphone (y/n): "
 read enable_mic
 
@@ -23,13 +23,13 @@ if [ -z "$MAX_NUMBER" ]; then
 	MAX_NUMBER=0
 fi
 
-# Determine the next number
+# Next number
 NEXT_NUMBER=$((MAX_NUMBER + 1))
 
-# Define the filename format
+# Filename format
 FILENAME="$TARGET_DIR/${NEXT_NUMBER}_vid.mkv"
 
-# Check if microphone is enabled and define the input
+# Check if microphone is enabled
 if [ "$enable_mic" = "y" ] || [ "$enable_mic" = "Y" ] || [ -z "$enable_mic" ]; then
 	MIC_INPUT="-f alsa -i hw:0,0"  # Default internal microphone device
 else
