@@ -24,7 +24,7 @@ if [ -d "$pdir" ]; then
 	    # Install the custom user.js to the Firefox profile
 	    rm -rf $pdir/* && rm -rf $pdir/.parentlock
 	    cp "$custom_userjs" "$pdir/user.js"
-	    killall firefox
+	    pkill firefox
 	    echo "Custom user.js has been installed to the profile."
     else
 	    echo "Error: ~/.local/share/user.js not found."
