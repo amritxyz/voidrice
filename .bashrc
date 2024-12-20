@@ -14,6 +14,7 @@ export BROWSER="firefox"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export PATH="$PATH:$HOME/.local/bin"
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 
 # Prompt configuration
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
