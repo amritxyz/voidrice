@@ -816,7 +816,7 @@ user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
 // user_pref("alerts.useSystemBackend.windows.notificationserver.enabled", false);
 // -------------------------------------
 // Disable location bar using search
-user_pref("keyword.enabled", false);
+user_pref("keyword.enabled", true);
 // -------------------------------------
 // Force GPU sandboxing (Linux, default on Windows)
 user_pref("security.sandbox.gpu.level", 1);
