@@ -10,6 +10,18 @@ PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\
 export LS_COLORS='di=1;34:fi=0:ln=0;36:ex=0;32:'
 eval "$(dircolors -b)"
 
+# Default programs
+export EDITOR="nvim"
+export TERMINAL="st"
+export TERMINAL_PROG="st"
+export BROWSER="firefox"
+
+# Environment variables
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$PATH:$HOME/.local/bin"
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+
 # Shell options and settings
 shopt -s autocd
 stty -ixon
