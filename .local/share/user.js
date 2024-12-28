@@ -13,6 +13,8 @@
 // My changes
 // *********************
 // ***************************************************************************************
+// Hardware acceleration
+user_pref("layers.acceleration.force-enabled", true);
 // Set compact density
 user_pref("browser.uidensity", 1); // 0 = default, 1 = compact, 2 = touch
 //
@@ -1183,7 +1185,7 @@ user_pref("security.family_safety.mode", 0);
 // user_pref("javascript.use_us_english_locale", true); // [HIDDEN PREF]
 // -------------------------------------
 // Disable skipping DoH when parental controls are enabled [FF70+]
-user_pref("network.dns.skipTRR-when-parental-control-enabled", false)
+user_pref("network.dns.skipTRR-when-parental-control-enabled", false);
 //
 // FF123
 //

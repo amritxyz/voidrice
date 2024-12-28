@@ -7,15 +7,15 @@ set autoquit true
 
 # Custom Functions
 cmd mkdir ${{
-  printf "Directory Name: "
-  read ans
-  mkdir $ans
+	printf "Directory Name: "
+		read ans
+		mkdir $ans
 }}
 
 cmd mkfile ${{
-  printf "File Name: "
-  read ans
-  nvim $ans
+	printf "File Name: "
+		read ans
+		nvim $ans
 }}
 
 cmd open &{{
@@ -58,11 +58,7 @@ map c
 map d
 map m
 
-map co $nvim "$f"
-map cf $dotbare fadd -f
-
 map zi extract
-map ae $wine "$f"
 
 # Basic Functions
 map . set hidden!
@@ -74,11 +70,11 @@ map de $trashy empty --all
 map p paste
 map x cut
 map y copy
-map <enter> open
+map <enter> $nvim "$f"
 map R reload
 map mf mkfile
 map md mkdir
-map me $chmod +x "$f"
+map ex $chmod +x "$f"
 map <esc> clear
 
 # Movement
@@ -89,4 +85,6 @@ map gd cd ~/.local/dev
 map gi cd ~/.local/img
 map gm cd ~/.local/music
 map gv cd ~/.local/vids
-map gs cd ~/.local/share/
+map gs cd ~/.local/share
+map gw cd ~/.local/git-repos
+map gw cd ~/.local/share/void-wall
