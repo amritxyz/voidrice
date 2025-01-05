@@ -33,7 +33,7 @@ cmd extract ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
 	printf "%s\n\t" "$fx"
-	printf "extract?[y/N]"
+	printf "extract? [y/N] "
 	read ans
 	[ $ans = "y" ] && {
 		case $fx in
@@ -58,7 +58,11 @@ map c
 map d
 map m
 
+map co $nvim "$f"
+map cf $dotbare fadd -f
+
 map zi extract
+map ae $wine "$f"
 
 # Basic Functions
 map . set hidden!
@@ -70,11 +74,11 @@ map de $trashy empty --all
 map p paste
 map x cut
 map y copy
-map <enter> $nvim "$f"
+map <enter> open
 map R reload
 map mf mkfile
 map md mkdir
-map ex $chmod +x "$f"
+map me $chmod +x "$f"
 map <esc> clear
 
 # Movement
@@ -88,3 +92,5 @@ map gv cd ~/.local/vids
 map gs cd ~/.local/share
 map gr cd ~/.local/git-repos
 map gw cd ~/.local/share/void-wall
+map dl cd ~/.local/dl
+map dox cd ~/.local/dox
