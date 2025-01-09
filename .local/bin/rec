@@ -32,5 +32,6 @@ sleep 2 &&
 	-s 1366x768 \
 	-i :0.0 \
 	-f alsa -i default \
+	-af 'afftdn=nf=-75' \
 	-c:v libx264 -r 30 -c:a flac \
 	"$FILENAME"
