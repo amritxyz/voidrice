@@ -31,5 +31,5 @@ sleep 2 &&
 	-f alsa -i default \
 	-af "afftdn=nf=-75" \
 	-ac 2 -ar 44100 -ab 192k \
-	-vsync 0 \
+	-strict -2 \
 	"$FILENAME"
