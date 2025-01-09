@@ -26,10 +26,10 @@ NEXT_NUMBER=$((MAX_NUMBER + 1))
 FILENAME="$TARGET_DIR/${NEXT_NUMBER}_aud.mp3"
 
 # Record audio using ffmpeg (only audio, not video)
-# -af "afftdn=nf=-75" \
 sleep 2 &&
 	ffmpeg -y \
 	-f alsa -i default \
+	-af "afftdn=nf=-75" \
 	-ac 2 -ar 44100 -ab 192k \
 	-vsync 0 \
 	"$FILENAME"
