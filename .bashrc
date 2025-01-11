@@ -64,11 +64,11 @@ alias xr='sudo xbps-remove -R'
 alias xq='xbps-query'
 alias ..='cd .. && ls -AF'
 alias ...='cd ../../ && ls -AF'
-alias yta-aac="yt-dlp --extract-audio --audio-format aac "
-alias yta-best="yt-dlp --extract-audio --audio-format best "
-alias yta-flac="yt-dlp --extract-audio --audio-format flac "
-alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
-alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
+alias yta-aac='yt-dlp --extract-audio --audio-format aac'
+alias yta-best='yt-dlp --extract-audio --audio-format best'
+alias yta-flac='yt-dlp --extract-audio --audio-format flac'
+alias yta-mp3='yt-dlp --extract-audio --audio-format mp3'
+alias ytv-best='yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
@@ -76,23 +76,23 @@ alias mkdir='mkdir -p'
 alias zzz='sudo zzz'
 
 # Git aliases
-alias g="git"
-alias gst="git status"
-alias gc="git commit -m"
-alias ga="git add"
-alias gpl="git pull"
-alias gpom="git push origin master"
-alias gpu="git push"
-alias gpuom="git push origin main"
-alias gd="git diff"
-alias gch="git checkout"
-alias gnb="git checkout -b"
-alias gac="git add . && git commit -m"
-alias grs="git restore --staged ."
-alias gre="git restore"
-alias gr="git remote"
-alias gcl="git clone"
-alias gt="git ls-tree -r master --name-only"
-alias gb="git branch"
-alias gf="git fetch"
-alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n%  C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias g='git'
+alias gst='git status'
+alias gc='git commit -m'
+alias ga='git add'
+alias gpl='git pull'
+alias gpom='git push origin master'
+alias gpu='git push'
+alias gpuom='git push origin main'
+alias gd='git diff'
+alias gch='git checkout'
+alias gnb='git checkout -b'
+alias gac='git add . && git commit -m'
+alias grs='git restore --staged .'
+alias gre='git restore'
+alias gr='git remote'
+alias gcl='git clone'
+alias gt='git ls-tree -r master --name-only'
+alias gb='git branch'
+alias gf='git fetch'
+alias glg='git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n%  C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all'
