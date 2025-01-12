@@ -16,7 +16,8 @@ pdir="$browserdir/$profile"
 # Ensure profile directory exists
 if [ -d "$pdir" ]; then
 	# Custom user.js
-	custom_userjs="/home/$USER/.local/share/1-user.js"
+	custom_userjs="/home/$USER/.local/share/betterfox.js"
+	# custom_userjs="/home/$USER/.local/share/arkenfox.js"
 
     # Check if custom user.js exists
     if [ -f "$custom_userjs" ]; then
