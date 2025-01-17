@@ -62,7 +62,7 @@ map co $nvim "$f"
 map cf $dotbare fadd -f
 
 map zi extract
-map ae $wine "$f"
+map aa $xwallpaper --stretch "$f"
 
 # Basic Functions
 map . set hidden!
@@ -93,5 +93,5 @@ map gs cd ~/.local/share
 map gr cd ~/.local/git-repos
 map gw cd ~/.local/share/void-wall
 map gp cd ~/.local/practice
-map dl cd ~/.local/dl
-map dox cd ~/.local/dox
+map gl cd ~/.local/dl
+map gx cd ~/.local/dox
