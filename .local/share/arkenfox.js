@@ -82,6 +82,31 @@ user_pref("identity.fxaccounts.enabled", false); // Firefox Accounts & Sync [FF6
 user_pref("browser.tabs.firefox-view", false); // Firefox-view
 user_pref("browser.chrome.site_icons", false); // Favicons
 user_pref("browser.shell.checkDefaultBrowser", false);
+// Disable location bar suggestion types
+user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.bookmark", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.topsites", false); // [FF78+]
+user_pref("browser.urlbar.suggest.weather", false);
+user_pref("browser.urlbar.suggest.engines", false);
+// FIREFOX HOME CONTENT
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false); // Recommended by Pocket
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.newtabpage.activity-stream.showSearch", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false);
+user_pref("browser.urlbar.recentsearches.featureGate", false);
+user_pref("browser.urlbar.clipboard.featureGate", false);
+// Password and other
+user_pref("signon.rememberSignons", false);
+user_pref("browser.sessionstore.max_tabs_undo", 0);
+user_pref("browser.sessionstore.resume_from_crash", false);
+
+// -------------------------------------
+// Clear default topsites
+
 
 // **********************************************************************************************
 
