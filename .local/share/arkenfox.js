@@ -75,7 +75,7 @@
 
 user_pref("browser.uidensity", 1); // 0 = default, 1 = compact, 2 = touch
 user_pref("toolkit.cosmeticAnimations.enabled", false);
-user_pref("browser.privatebrowsing.autostart", true);
+user_pref("browser.privatebrowsing.autostart", false);
 user_pref("extensions.pocket.enabled", false); // Pocket Account [FF46+]
 user_pref("extensions.screenshots.disabled", true); // [FF55+]
 user_pref("identity.fxaccounts.enabled", false); // Firefox Accounts & Sync [FF60+] [RESTART]
@@ -108,6 +108,9 @@ user_pref("extensions.formautofill.addresses.enabled", false); // [FF55+]
 user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
 user_pref("security.OCSP.enabled", 0); // [DEFAULT: 1]
 user_pref("security.OCSP.require", false);
+// New session
+user_pref("privacy.clearOnShutdown.sessions", true);  // Active Logins [DEFAULT: true]
+user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
 
 
 // -------------------------------------
@@ -737,8 +740,8 @@ user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true); // [F
  * [1] https://en.wikipedia.org/wiki/Basic_access_authentication ***/
 user_pref("privacy.clearOnShutdown.cookies", true); // Cookies
 user_pref("privacy.clearOnShutdown.offlineApps", true); // Site Data
-user_pref("privacy.clearOnShutdown.sessions", true);  // Active Logins [DEFAULT: true]
-user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true); // Cookies, Site Data, Active Logins [FF128+]
+//user_pref("privacy.clearOnShutdown.sessions", false);  // Active Logins [DEFAULT: true]
+//user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
 
 /** SANITIZE SITE DATA: IGNORES "ALLOW" SITE EXCEPTIONS ***/
 /* 2820: set manual "Clear Data" items [SETUP-CHROME] [FF128+]
