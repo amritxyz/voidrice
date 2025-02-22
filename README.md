@@ -9,7 +9,7 @@ sudo xbps-install brightnessctl xwallpaper htop xset slock lf alsa-utils font-aw
 ```
 # Window Manager
 ```
-git clone https://gitlab.com/amrit-44404/void-dwm
+git clone https://github.com/amrit-44404/void-dwm
 ```
 # NetworkManager
 ```
