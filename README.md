@@ -1,17 +1,16 @@
 # Installation
+
+## Install Script
+```bash
+git clone --depth=1 https://github.com/amritxyz/void-install.git
 ```
-sudo xbps-install xorg base-devel harfbuzz-devel libX11-devel libXinerama-devel libXft-devel
+
+## Window Manager
+```bash
+git clone https://github.com/amritxyz/void-dwm
 ```
-# Dependencies
-```
-sudo xbps-install brightnessctl xwallpaper htop xset slock lf alsa-utils font-awesome6 nerd-fonts-symbols-ttf xcompmgr fastfetch firefox nsxiv neovim mpv newsboat sxhkd bleachbit unzip zathura zathura-pdf-poppler zathura-cb zathura-djvu
-//font-hack-ttf
-```
-# Window Manager
-```
-git clone https://github.com/amrit-44404/void-dwm
-```
-# NetworkManager
+
+## NetworkManager
 ```
 sudo xbps-install NetworkManager &&
 sudo rm -rf /var/service/dhcpcd &&
@@ -21,7 +20,8 @@ sudo ln -s /etc/sv/dbus/ /var/service/ &&
 sv up dhcpcd &&
 sv up wpa_supplicant &&
 ```
-# wpa_supplicant
+
+## wpa_supplicant
 ```
 /etc/wpa_supplicant/wpa_supplicant.conf
 
@@ -33,7 +33,7 @@ wpa_passphrase SSID passphrase >> /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 wpa_supplicant -B -i interface -c wpa_supplicant-wlp2s0.conf
 ```
 
-# Change Network
+## Change Network
 ```
 wpa_passphrase SSID passphrase >> /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 
