@@ -7,7 +7,7 @@ git clone --depth=1 https://github.com/amritxyz/void-install.git
 
 ## Window Manager
 ```bash
-git clone --depth=1 https://github.com/amritxyz/void-dwm
+git clone --depth=1 https://github.com/amritxyz/void-dwm.git
 ```
 
 ## NetworkManager
