@@ -14,7 +14,7 @@ eval "$(dircolors -b)"
 export EDITOR="nvim"
 export TERMINAL="st"
 export TERMINAL_PROG="st"
-export BROWSER="firefox"
+export BROWSER="chromium"
 
 # Environment variables
 export DISPLAY=:0
