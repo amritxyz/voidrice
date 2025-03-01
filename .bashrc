@@ -16,6 +16,10 @@ export TERMINAL="st"
 export TERMINAL_PROG="st"
 export BROWSER="chromium"
 
+export GOOGLE_API_KEY="no"
+export GOOGLE_DEFAULT_CLIENT_ID="no"
+export GOOGLE_DEFAULT_CLIENT_SECRET="no"
+
 # Environment variables
 export DISPLAY=:0
 export XDG_SESSION_TYPE=x11
